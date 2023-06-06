@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="yellow">
+<table border="2" align="center">
+    <tr><th>pid</th><th>pname</th><th>pcost</th><th>pmfdt</th><th>pexpdt</th></tr>
+        {% for p in records %}
+    <tr><td>{{ p.pid }}</td>
+        <td>{{ p.pname }}</td>
+        <td>{{ p.pcost }}</td>
+        <td>{{ p.pmfdt }}</td>
+        <td>{{ p.pexpdt }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+</center>
+</body>
+</html>
