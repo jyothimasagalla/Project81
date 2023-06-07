@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#f0f8ff">
+<form action="./update">
+    Product pid:<input type="text" name="t1" value="{{ rec.pid }}"><br>
+    Product name:<input type="text" name="t2" value="{{ rec.pname }}"><br>
+    Product pcost:<input type="text" name="t3" value="{{ rec.pcost }}"><br>
+    Product mfdt:<input type="text" name="t4" value="{{ rec.pmfdt| date:"Y-m-d"}}"><br>
+    Product expdt:<input type="text" name="t5" value="{{ rec.pexpdt| date:"Y-m-d"}}"><br>
+
+    <input type="submit" value="update">
+
+</form>
+
+</body>
+</html>
